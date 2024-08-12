@@ -1,0 +1,62 @@
+<div>
+    <h1>Alimentos</h1>
+    <div id="formFood">
+        <div class="form-floating">
+            <input type="text" readonly class="form-control" id="txtIdAlim">
+            <label for="txtIdAlim">ID</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtNomAlim">
+            <label for="txtNomAlim">Nombre</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtDescAlim">
+            <label for="txtDescAlim">Descripción</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtPriceAlim">
+            <label for="txtPriceAlim">Precio</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtCatAlim">
+            <label for="txtCatAlim">Categoría</label>
+        </div>
+        <br>
+        <div class="">
+            <input type="file" id="ifFotoAlim" onchange="cargarImagenAlim();">
+            <img src="" alt="No hay imagen" id = "fotoAlim" height="100" width="100">
+            <textarea id="txtFotoAlim" rows="5" cols="10"></textarea>
+        </div>
+        <br>
+              <button type="button" class="btn boton2" onclick="addAlim();"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" class="btn boton2" onclick="changeAlim(x);"><i class="fa-solid fa-pen"></i></button>
+                    <button type="button" class="btn boton2" onclick="cancelarAlim();"><i class="fa-solid fa-ban"></i></button>
+                    <br>
+                    <br>
+                    <input type="search" id="txtLkAlim" class="form-control">
+                    <button type="button" class="btn boton2" onclick="lkAlim();"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <br>
+                    <br>      
+    </div>
+    <div id="catAlim">
+        <table border="1" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id </th>
+                    <th>Nombre </th>
+                    <th>Descripción </th>
+                    <th>Precio </th>
+                    <th>Categoría  </th>
+                    <th>Imagen </th>
+                </tr>
+            </thead>
+            <tbody id="tbCatAlim">
+                
+            </tbody>
+        </table>
+    </div>
+</div>

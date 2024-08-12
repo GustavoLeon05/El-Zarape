@@ -1,0 +1,38 @@
+body{
+    background-color:#FEF3E2;
+}
+div{
+    margin: auto;
+}
+#topLogo{
+    margin: auto;
+    margin-left: 33%
+}
+header{
+    background-color: #FAAF08;
+    
+}
+footer{
+    background-color: #FAAF08;
+    
+}
+#side-bar{
+    background-color: #FA812F;
+}
+.boton{
+    background-color: #FEF3E2;
+    color: #FA4032;
+}
+
+.boton :hover{
+    background-color: #FA812F;
+    color: #FEF3E2;
+}
+.boton2{
+    background-color: #FAAF08;
+    color: #FEF3E2;
+}
+.boton2 :hover{
+    background-color: #FEF3E2;
+    color: #FEF3E2;
+}

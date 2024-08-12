@@ -1,0 +1,64 @@
+<div>
+    <h1>Bebidas</h1>
+    <div id="formDrink">
+        <div class="form-floating">
+            <input type="text" readonly class="form-control" id="txtIdDrink">
+            <label for="txtIdDrink">ID</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtNomDrink">
+            <label for="txtNomDrink">Nombre</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtDescDrink">
+            <label for="txtDescDrink">Descripción</label>
+        </div>
+        <br>
+        <div class="">
+            <input type="file" id="ifFotoDrink" onchange="cargarImgDrink();">
+            <img src="" alt="No hay imagen" id = "fotoDrink" height="100" width="100">
+            <textarea id="txtFotoDrink" rows="5" cols="10"></textarea>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="number" class="form-control" id="noPrice">
+            <label for="noPrice">Precio</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="catDrink">
+            <label for="catDrink">Categoria</label>
+        </div>
+        <br>
+                    <button type="button" class="btn boton2" onclick="addDrink();"><i class="fa-solid fa-plus"></i></button>
+                    <button type="button" class="btn boton2" onclick="changeDrink(y);"><i class="fa-solid fa-pen"></i></button>
+                    <button type="button" class="btn boton2" onclick="cancelDrink();"><i class="fa-solid fa-ban"></i></button>
+                    <br>
+                    <br>
+                    <input type="search" id="txtLkDrink" class="form control">
+                    <button type="button" class="btn boton2" onclick="lkDrink();"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <br>
+                    <br>
+    </div>
+    <div id="catDrink">
+        <table border="1" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>id </th>
+                    <th>Nombre </th>
+                    <th>Descripción </th>
+                    <th>Foto </th>
+                    <th>Precio </th>
+                    <th>Categoría </th>
+                    <th> </th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody id="tbCatDrink">
+                
+            </tbody>
+        </table>
+    </div>
+</div>

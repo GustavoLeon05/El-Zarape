@@ -1,0 +1,78 @@
+<div>
+    <h1>Sucursal</h1>
+    <div id="formSuc">
+        <div class="form-floating">
+            <input type="text" readonly class="form-control" id="txtIdSuc">
+            <label for="txtIdSuc">ID</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtNomSuc">
+            <label for="txtNomSuc">Nombre</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtDirSuc">
+            <label for="txtDirSuc">Dirección</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtHorSuc">
+            <label for="txtHorSuc">horario</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtLatSuc">
+            <label for="txtLatSuc">Latitud</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtLongSuc">
+            <label for="txtLongSuc">Longitud</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <select id="txtStatSuc" class="form-control">
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+            <label for="txtStatSuc">Estatus:</label>
+        </div>
+        <br>
+        <div class="">
+            <input type="file" id="ifFotoSuc" onchange="cargarImgSuc();">
+            <img src="" alt="No hay imagen" id = "fotoSuc" height="100" width="100">
+            <textarea id="txtFotoSuc" rows="5" cols="10"></textarea>
+        </div>
+        <br>
+        <button type="button" class="btn boton2" onclick="addSuc();"><i class="fa-solid fa-plus"></i></button>
+        <button type="button" class="btn boton2" onclick="changeSuc(x);"><i class="fa-solid fa-pen"></i></button>
+        <button type="button" class="btn boton2" onclick="cancelarSuc();"><i class="fa-solid fa-ban"></i></button>
+        <br>
+        <br>
+        <input type="search" id="txtLkSuc" class="form control">
+        <button type="button" class="btn boton2" onclick="lkSuc();"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <br>
+        <br>
+    </div>
+
+    <div id="catSuc">
+        <table border="1" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>id </th>
+                    <th>Nombre </th>
+                    <th>Dirección </th>
+                    <th>Horario </th>
+                    <th>Latitud </th>
+                    <th>Longitud </th>
+                    <th>Estatus </th>
+                    <th>Imagen </th>
+                </tr>
+            </thead>
+            <tbody id="tbCatSuc">
+
+            </tbody>
+        </table>
+    </div>
+</div>

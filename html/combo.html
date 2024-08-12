@@ -1,0 +1,58 @@
+<div>
+    <h1>Combos</h1>
+    <div id="formCombo">
+        <div class="form-floating">
+            <input type="text" readonly class="form-control" id="txtIdCombo">
+            <label for="txtIdCombo">ID</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtNombreCombo">
+            <label for="txtNombreCombo">Nombre</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtDescripcionCombo">
+            <label for="txtDescripcionCombo">Descripción</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <select class="form-control" id="selectProducto">
+                
+            </select>
+            <label for="selectProducto">Productos</label>
+        </div>
+        <br>
+        <button type="button" class="btn boton2" onclick="addProducto();"><i class="fa-solid fa-plus"></i> Añadir Producto</button>
+        <ul id="listaProductos"></ul>
+        <br>
+        <button type="button" class="btn boton2" onclick="addCombo();"><i class="fa-solid fa-plus"></i> Añadir Combo</button>
+        <button type="button" class="btn boton2" onclick="changeCombo();"><i class="fa-solid fa-pen"></i> Modificar Combo</button>
+        <button type="button" class="btn boton2" onclick="cancelarCombo();"><i class="fa-solid fa-ban"></i> Cancelar</button>
+        <br>
+        <br>
+        <input type="search" id="txtLkCombo" class="form-control">
+        <button type="button" class="btn boton2" onclick="lkCombo();"><i class="fa-solid fa-magnifying-glass"></i> Buscar Combo</button>
+        <br>
+        <br>
+    </div>
+    <div id="catCombo">
+        <table border="1" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Productos</th>
+                    <th>Descripción</th>
+                    <th>Subtotal</th>
+                    <th>Total</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbCatCombo">
+                
+            </tbody>
+        </table>
+    </div>
+</div>

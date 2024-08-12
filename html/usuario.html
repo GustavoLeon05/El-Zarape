@@ -1,0 +1,79 @@
+<div>
+    <h1>Usuario</h1>
+    <div id="formUser">
+        <div class="form-floating">
+            <input type="text" readonly class="form-control" id="txtIdUser">
+            <label for="txtIdUser">ID</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtNameUser">
+            <label for="txtNameUser">Nombre(s)</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtApellidosUser">
+            <label for="txtApellidosUser">Apellidos</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtTelUser">
+            <label for="txtTelUser">Teléfono</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="text" class="form-control" id="txtUsernameUser">
+            <label for="txtUsernameUser">Nombre de Usuario</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <select id="txtRolUser" class="form-control">
+                <option value="Administrador">Administrador</option>
+                <option value="Usuario">Usuario</option>
+            </select>
+            <label for="txtRolUser">Rol:</label>
+        </div>
+        <br>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="txtPasswordUser">
+            <label for="txtPasswordUser">Contraseña</label>
+            <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility();"> Mostrar Contraseña
+        </div>
+        <br>
+        <div class="form-floating">
+            <select id="txtEstatusUser" class="form-control">
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+            <label for="txtEstatusUser">Estatus:</label>
+        </div>
+        <br>
+        <button type="button" class="btn boton2" onclick="addUser();"><i class="fa-solid fa-plus"></i></button>
+        <button type="button" class="btn boton2" onclick="changeUser(x);"><i class="fa-solid fa-pen"></i></button>
+        <button type="button" class="btn boton2" onclick="cancelarUser();"><i class="fa-solid fa-ban"></i></button>
+        <br><br>
+        <input type="search" id="txtLkUser" class="form-control">
+        <button type="button" class="btn boton2" onclick="lkUser();"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <br><br>
+    </div>
+    <div id="catUser">
+        <table border="1" class="table table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre(s)</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Nombre de Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Estatus</th>
+                    <th>Rol</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tbCatUser">
+            </tbody>
+        </table>
+    </div>
+</div>
