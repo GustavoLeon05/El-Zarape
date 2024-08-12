@@ -3,7 +3,7 @@ function login(){
     let pssd=document.getElementById("txtPssd").value;
     
     if(usr=="admin" && pssd=="admin"){
-        location.href="http://localhost:8080/ElZarape/html/principal.html";
+        href="html/principal.html";
     }
     else{
         Swal.fire({
