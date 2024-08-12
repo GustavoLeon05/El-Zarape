@@ -3,7 +3,7 @@ function login(){
     let pssd=document.getElementById("txtPssd").value;
     
     if(usr=="admin" && pssd=="admin"){
-        href="html/principal.html";
+        location.href="../html/principal.html";
     }
     else{
         Swal.fire({
