@@ -10,14 +10,15 @@ div{
 }
 header{
     background-color: #FAAF08;
-    
+    width: auto;
 }
 footer{
     background-color: #FAAF08;
-    
+    width: auto;
 }
 #side-bar{
     background-color: #FA812F;
+    width: auto;
 }
 .boton{
     background-color: #FEF3E2;
